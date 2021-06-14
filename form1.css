@@ -1,0 +1,124 @@
+.form-control {
+			display: block;
+			width: 30%;
+            margin-left: 20%;    
+			height: @input-height-base; 
+			padding: @padding-base-vertical @padding-base-horizontal;
+			font-size: @font-size-base;
+			line-height: @line-height-base;
+			color: @input-color;
+			background-color: @input-bg;
+			background-image: url(trans.jpg);
+			border: 1px solid @input-border;
+			border-radius: @input-border-radius; 
+			
+			transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+            }
+		
+		label{
+			color:white;
+		}
+        .form-group{
+                margin-left: 5%;
+                font-family:sans-serif;
+                font-size: 20px;
+            }        
+            
+ .btn01{    
+     font-family:sans-serif;
+                width: 90px;
+                height: 40px;
+                border-radius: 7px;
+                margin-left: 100px;
+                margin-top: 30px;
+                background-color: black;
+                border: 0px white;
+                color: aliceblue;
+                opacity: 0.7;
+                font-size: 15px;
+                
+            } 
+
+.btn01:hover{
+                opacity: 1.5;
+            }
+
+
+ .btn02{   
+     font-family:sans-serif;
+                width: 90px;
+                height: 40px;
+                border-radius: 7px;
+                margin-left: 200px;
+                margin-top: 30px;
+                background-color: black;
+                border: 0px white;
+                color: aliceblue;
+                opacity: 0.7;
+                font-size: 15px;
+            } 
+     .btn02:hover{
+                opacity: 1.5;
+            }
+
+        
+
+.navImg{
+    width: 35px;
+    height: 35px;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: btns;
+    opacity: 0.5;
+    
+    
+}
+@keyframes btns {
+  from {left:0px; top:0px; opacity:0;}
+     
+  to{ left:200px; opacity:0.5;}
+}
+.navImg:hover{
+    opacity: 1.5;
+}
+.navSch{
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    opacity: 0.5;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: Search;
+    
+}
+.navSch{
+    opacity: 1.5;
+}
+@keyframes Search {
+  from { width: 0px; top:0px; opacity:0;}
+     
+  to{ width: 200px; opacity:0.5;}
+}
+.dropD{
+    background-color: black;
+    width:300px; 
+    
+}
+.dropD dd a{
+        opacity:0.5;
+        color: white;
+        padding: 4px 90px;
+        font-size: 15px;
+        float: left;
+        
+}
+.dropD dd a:hover{
+        opacity: 1.0;
+        color: solid white;
+        text-decoration: blink;
+}
+p{
+    font-size: 13px;
+}
