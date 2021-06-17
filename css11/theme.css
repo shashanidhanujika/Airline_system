@@ -1,0 +1,832 @@
+.navigation1{
+    height:60px;
+    background-color: rgba(0,0,0,0.3);
+    
+}
+
+.navshadow{
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+}
+
+.logo{
+     font-family:serif;
+    color:#fff;
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    left:30px;
+    top:8px;
+}
+
+.logo a{
+    text-decoration: blink;
+    color:#fff;
+}
+
+.bg{
+    background-color: #555555;
+}
+
+.join_btn , .sign_btn, .about_us{
+    font-family:serif;
+    border:1px solid #fff;
+    color:#fff;
+    width:100px;
+    height: 30px;
+    background-color:rgba(0,0,0,0) ;
+    position: absolute;
+    cursor: pointer;
+    
+    transition: background-color .5s;
+}
+
+.join_btn{right:140px;top:15px;}
+.sign_btn{right:30px;top:15px; border:1px solid #fc0228; background-color:#fc0228}
+.about us{right:140px;top:15px;text-align: left;}
+
+.join_btn:hover{background-color:#fff ;border:1px solid #fff ;color:#000; transition: background-color .5s}
+.sign_btn:hover{background-color:#fff ;border:1px solid #fff ;color:#000; transition: background-color .5s}
+.about_us:hover{background-color:#fff ;border:1px solid #fff ;color:#000; transition: background-color .5s}
+
+.imgs{
+    
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url("../img/MAGNETIC-STRIP-CARD.jpg");
+        height:100vh;        
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+
+.topic{
+    margin-top:360px;
+    text-align: center;
+    color: #fff;
+    font-family:serif;
+    opacity: 0.0;
+    text-shadow: 5px 5px 7px rgba(0,0,0,0.9);
+    
+    
+    animation-name: animate_topic;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate_topic{
+    from {margin-top:360px; opacity: 0.0; text-shadow: 0px 0px 0px rgba(0,0,0,0.0);}
+    to {margin-top:260px; opacity: 1.0; text-shadow: 5px 5px 7px rgba(0,0,0,0.9);}
+}
+
+@media screen and (min-width: 401px) {
+  h1.topic {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1.topic {
+    font-size: 22px;
+  }
+}
+
+
+.tagline{
+    text-align: center;
+    color: #fff;
+    font-family:serif;
+    opacity: 0.0;
+    text-shadow: 5px 5px 7px rgba(0,0,0,0.9);
+        
+    animation-name: tagL;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 401px) {
+  p.tagline {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  p.tagline {
+    font-size: 11px;
+  }
+}
+
+@keyframes tagL{
+    from { opacity: 0.0; text-shadow: 0px 0px 0px rgba(0,0,0,0.0);}
+    to { opacity: 1.0; text-shadow: 5px 5px 7px rgba(0,0,0,0.9);}
+}
+
+.s_button{
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0);
+    border:2px solid #fff;
+    border-radius: 50%;
+    width:34px;
+    height: 34px;
+    opacity: 0.0;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    transition: background-color 1s;
+    
+    animation-name: sb;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sb{
+    from{opacity: 0.0;}
+    to{ opacity: 1.0;}
+}
+
+
+.s_input{
+    width:0px;
+    height: 34px;
+    border:1px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    color: #fff;
+    opacity: 0.0;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    transition: background-color 1s;
+    
+    animation-name: si;
+    animation-delay:2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 401px) {
+  input.s_input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input.s_input {
+    font-size: 11px;
+  }
+}
+
+
+@keyframes si{
+    from{opacity: 0.0;width:0px;}
+    to{ opacity: 1.0;width:50%;}
+}
+
+.s_button:hover{background-color:rgba(0,0,0,0.6); transition: background-color 0.4s;}
+.s_input:hover{background-color:rgba(0,0,0,0.6); transition: background-color 0.4s;}
+
+
+
+.navigation2 div{
+    //width:240px;
+    height: 40px;
+    padding-top: 8px;
+    
+    //border:1px solid black;
+    color:#fff;
+    background-color: rgba(0,0,0,0.8);
+    border-left: 0px solid red;
+    transition: border-left 0.5s;
+    text-align: center;
+}
+
+.navigation2 div:hover{
+    
+    border-left: 20px solid red;
+    transition: border-left 0.2s;
+
+}
+
+.navigation2 div a{
+    padding-left: 25px;
+    
+    text-decoration: blink;
+    color:#fff;
+}
+
+.banner1{
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/smartphone_and_accessories.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    transition: background 1s;
+}
+
+.banner_title{
+    text-align: center;
+    color: #fff;
+    font-family:serif;
+    //opacity: 0.0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 45%;
+    left: 40%;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+}
+
+/* catagaraz*/
+.lap_cat_bg{
+    
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/362122-negative-laptop-pens-books-MacBook.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:240px;
+    
+    color:#fff;
+    text-align: center;
+    
+}
+
+.lap_cat_bg h2{
+    margin-top: 90px;
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.lap_cat_bg p{
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.cam_cat_bg{
+    
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/39331285-camera-wallpapers.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:240px;
+    
+    color:#fff;
+    text-align: center;
+    
+}
+
+.cam_cat_bg h2{
+    margin-top: 90px;
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.cam_cat_bg p{
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+
+.cloths_cat_bg{
+    
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/38916349-clothes-wallpapers.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:240px;
+    
+    color:#fff;
+    text-align: center;
+    
+}
+
+.cloths_cat_bg h2{
+    margin-top: 90px;
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.cloths_cat_bg p{
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+
+.health_cat_bg{
+    
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/Fitness_Men_462721.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:240px;
+    
+    color:#fff;
+    text-align: center;
+    
+}
+
+.health_cat_bg h2{
+    margin-top: 90px;
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.health_cat_bg p{
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+
+.tv_cat_bg{
+    
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url("../img/wallpaper2you_400731.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:240px;
+    
+    color:#fff;
+    text-align: center;
+    
+}
+
+.tv_cat_bg h2{
+    margin-top: 90px;
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.tv_cat_bg p{
+    font-family: serif;
+    text-shadow: 3px 3px 5px #000;
+}
+/*--- end cat -- */
+
+/* sign up and join style*/
+.sign_from{
+    margin-top: 240px;
+}
+
+.sign_from h3, .reg_form h3{
+    font-family:serif;
+    color:#fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+    opacity: 0.0;
+    
+    }
+.sign_from h3{
+    animation-name: signin_h3;
+    animation-delay: 0.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.reg_form h3{
+    animation-name: join_h3;
+    animation-delay: 0.6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes signin_h3{
+    from {margin-top:310px; opacity: 0.0; text-shadow: 0px 0px 0px rgba(0,0,0,0.0);}
+    to {margin-top:240px; opacity: 1.0; text-shadow: 5px 5px 7px rgba(0,0,0,0.9);}
+}
+
+@keyframes join_h3{
+    from {margin-top:240px; opacity: 0.0; text-shadow: 0px 0px 0px rgba(0,0,0,0.0);}
+    to {margin-top:140px; opacity: 1.0; text-shadow: 5px 5px 7px rgba(0,0,0,0.9);}
+}
+
+
+
+.txt1 , .txt2 , .txt3, .txt4, .txt5, .txt6, .txt7, .txt8, .txt9, .txt10, .txt11, .txt12{
+    width:40%;
+    height:36px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.0);
+    border:1px solid #fff;
+    text-align: center;
+    margin:10px;
+    color:#fff;
+    opacity: 0.0;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    
+    transition: background-color 0.4s;
+
+}
+.txt1:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt2:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt3:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt4:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt5:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt6:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt7:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt8:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt9:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt10:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt11:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+.txt12:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition: background-color 0.4s;     
+}
+
+/*@media screen and (min-width: 401px) {
+  input.txt1 {
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input.txt1 {
+    font-size:11px;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  input.txt2 {
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input.txt2 {
+    font-size:11px;
+  }
+}*/
+
+.txt1{
+    animation-name: txt1_width;
+    animation-delay:1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt1_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt2{
+    animation-name: txt2_width;
+    animation-delay:1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt2_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt3{
+    animation-name: txt3_width;
+    animation-delay:1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt3_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt4{
+    animation-name: txt4_width;
+    animation-delay:1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt4_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0; }
+}
+
+.txt5{
+    animation-name: txt5_width;
+    animation-delay:2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt5_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt6{
+    animation-name: txt6_width;
+    animation-delay:2.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes txt6_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt7{
+    animation-name: txt7_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes txt7_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.txt8{
+    animation-name: txt8_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes txt8_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+.txt9{
+    animation-name: txt9_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes txt9_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+.txt10{
+    animation-name: txt10_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes txt10_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+.txt11{
+    animation-name: txt11_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes txt11_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+.txt12{
+    animation-name: txt12_width;
+    animation-delay:3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes txt12_width{
+    from {width:0%; opacity: 0.0;}
+    to {width:45%; opacity: 1.0;}
+}
+
+.submit_sign, .submit_join{
+    margin-top:8px;
+    background-color:#fc0228;
+    border:0px solid #000;
+    width:140px;
+    height: 36px;
+    color:#fff;
+    border-radius:15px;
+    opacity: 0.0;
+    cursor: pointer;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    transition: color 0.8s, background-color 0.8s;
+    
+}
+.submit_sign{
+    animation-name:submitting_sign;
+    animation-delay:2.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.submit_join{
+    animation-name:submitting_join;
+    animation-delay:3.8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes submitting_sign{
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+@keyframes submitting_join{
+    from {opacity: 0.0;}
+    to {opacity: 1.0; }
+}
+
+.submit_sign:hover{
+    color:#000;
+    background-color: #fff;
+    
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.submit_join:hover{
+    color:#000;
+    background-color: #fff;
+    
+    transition: color 0.4s, background-color 0.4s;
+}
+
+label{
+    color:#fff;
+    margin-top:16px;
+    opacity: 0.0;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    
+    animation-name:stay_sign;
+    animation-delay:2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+.check{
+    margin-top:16px;
+    margin: 5px;
+    opacity: 0.0;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    
+    animation-name:stay_sign;
+    animation-delay:2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes stay_sign{
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+
+/* Footer box configuration */
+
+
+
+.feedback_table, .follow_table{
+    margin:20px;
+}
+
+.follow_ico img{
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5;
+}
+
+.follow_ico img:hover{
+    opacity: 0.5;
+    transition: opacity 0.5;
+}
+
+.follow_table td, .feedback_table td{
+    padding:5px;
+    
+}
+
+.follow_table th, .feedback_table th{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+
+.feedback_txt{
+    width:100%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+    
+}
+.send{
+    background-color:#fc0228;
+    border:0px solid #000;
+    width:140px;
+    height: 36px;
+    color:#fff;
+    border-radius:10px;
+    cursor: pointer;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.send:hover{
+    background-color:#fff;
+    color:#000;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.emails{
+    font-size: 12px;
+}
+
+/* payment an delivery */
+
+.buy_table{
+    width:50%;
+    margin-top:140px;
+    color:#fff;
+}
+
+.buy_table td{
+    padding:7px;
+}
+
+.buy_txt{
+    width:100%;
+    background-color: rgba(0,0,0,0);
+    border:1px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+}
+
+.cards{
+    background-color: rgba(0,0,0,0);
+    border:1px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+}
+.cards option{
+    color:#000;
+}
+
+.crd_icons img{
+    width:70px;
+    height:65px;
+}
+
+.pay{
+    background-color:#fc0228;
+    border:0px solid #000;
+    width:140px;
+    height: 36px;
+    color:#fff;
+    border-radius:10px;
+    cursor: pointer;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.9);
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.pay:hover{
+    background-color:#fff;
+    color:#000;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
